@@ -61,6 +61,7 @@ run_tests() {
     remove_truffle_config
 
     # Copy Sample contract updating solidity version
+    create_contracts_dir
     cp ./test/fixtures/Sample."${version:0:3}".sol.bak ./contracts/Sample.sol
     sed -i -e "s/{{version}}/$version/g" ./contracts/Sample.sol
     rm -f ./contracts/Sample.sol-e
@@ -79,7 +80,6 @@ run_tests() {
   done
 }
 
-create_contracts_dir
 kill_ganache
 start_ganache
 run_tests
