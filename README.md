@@ -5,7 +5,7 @@ This library allows to verify whether a smart contract supports an interface or 
 ## Install
 
 ```bash
-npm install --save facuspagnuolo/erc165-offchain#v1.0.0
+npm install erc165-offchain
 ```
 
 ## Usage
