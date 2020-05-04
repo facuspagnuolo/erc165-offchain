@@ -1,3 +1,5 @@
+> :warning: This is an experiment, use it at your own risk
+
 # ERC165 off-chain
 
 This library allows to verify whether a smart contract supports an interface or not computing it off-chain.
